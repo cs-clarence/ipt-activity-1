@@ -1,0 +1,19 @@
+{
+  "name": "pet-is",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "prettier": "@rencedm112/prettier-config",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@rencedm112/prettier-config": "^1.1.1",
+    "eslint": "^8.24.0",
+    "prettier": "^2.7.1"
+  }
+}
