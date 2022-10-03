@@ -53,7 +53,9 @@ class PetRepository {
   }
 
   findByName(name) {
-    return this._pets.find((v) => v.name === name);
+    return this._pets.find(
+      (v) => v.name.trim().toLowerCase() === name.trim().toLowerCase(),
+    );
   }
 
   deleteById(id) {
@@ -102,7 +104,7 @@ async function main() {
         break;
       case "2":
         {
-          const id = parseInt(await r1.question("ID: "), 10);
+          const id = await r1.question("ID: ");
           const pet = petRepository.findById(id);
           if (pet !== undefined) {
             console.log("Pet found: ", pet);
